@@ -11,7 +11,7 @@ search.addEventListener('click',()=>{
     if(city=='')
     return;
 
-    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${APIKey}`).then(response => response.json()).then(json => {
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=matric&appid=${APIKey}`).then(response => response.json()).then(json => {
         
         const image = document.querySelector('.weather-box img');
         const temperature = document.querySelector('.weather-box .temperature');
@@ -41,6 +41,12 @@ search.addEventListener('click',()=>{
             default:
                 image.src = 'assets/cloud.png';
         }
+        // console.log(json);
+        temperature.innerHTML=`${parseInt(json.main.temp)-273}<span>°C</span>`;
+        description.innerHTML = `${json.weather[0].description}`;
+        humidity.innerHTML = `${json.main.humidity}%`;
+        wind.innerHTML = `${parseInt(json.wind.speed)}km/h`;
+        
     })
 })
 
