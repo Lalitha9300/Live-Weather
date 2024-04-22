@@ -4,13 +4,14 @@ const weatherBox = document.querySelector('.weather-box');
 const weatherDetails = document.querySelector('.weather-details');
 
 search.addEventListener('click',()=>{
+    
     const APIKey ='a0bc8605d7f642ab9f6552b1f38aaef3';
     const city=document.querySelector('.search-box input').value;
 
     if(city=='')
     return;
 
-    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${APIKey}`).then(response => response.json()).then(json => {
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${APIKey}`).then(response => response.json()).then(json => {
         
         const image = document.querySelector('.weather-box img');
         const temperature = document.querySelector('.weather-box .temperature');
