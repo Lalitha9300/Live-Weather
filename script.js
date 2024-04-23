@@ -9,6 +9,7 @@ const cityHide = document.querySelector('.cityhide');
 
 search.addEventListener('click',()=>{
     
+    
     const APIKey ='a0bc8605d7f642ab9f6552b1f38aaef3';
     const city=document.querySelector('.search-box input').value;
 
@@ -69,20 +70,23 @@ search.addEventListener('click',()=>{
                 default:
                     image.src = 'assets/cloud.png';
             }
-            // console.log(json);
+            
             temperature.innerHTML=`${parseInt(json.main.temp)-273}<span>°C</span>`;
             description.innerHTML = `${json.weather[0].description}`;
             humidity.innerHTML = `${json.main.humidity}%`;
             wind.innerHTML = `${parseInt(json.wind.speed)}km/h`;
 
+            
             const infoWeather = document.querySelector('.info-weather');
             const infoHumidity = document.querySelector('.info-humidity');
             const infoWind = document.querySelector('.info-wind');
 
+            
             const elCloneInfoWeather = infoWeather.cloneNode(true);
             const elCloneInfoHumidity = infoHumidity.cloneNode(true);
             const elCloneInfoWind = infoWind.cloneNode(true);
-
+            
+            // console.log(elCloneInfoWeather);
             elCloneInfoWeather.id = 'clone-info-weather';
             elCloneInfoWeather.classList.add('active-clone');
 

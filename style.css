@@ -100,7 +100,7 @@ body{
 .container.active .weather-box .box .info-weather,
 .container.active .weather-details .humidity .info-humidity,
 .container.active .weather-details .wind .info-wind{
-    transform: translateY(-1%);
+    transform: translateY(0%);
     transition: transform 1s ease;
 }
 .weather-box img{
@@ -149,7 +149,7 @@ margin-left: 4px;
 }
 .weather-details .humidity .info-humidity,
 .weather-details .wind .info-wind{
-    transform: translateY(-102%);
+    transform: translateY(-120%);
     overflow: hidden;
 }
 .weather-details .humidity{
@@ -202,13 +202,13 @@ width: 70%;
 #clone-info-weather .weather{
     transform: translateY(120%);
     transition: transform 1s ease, opacity 0s;
-    transition-delay: 0s, 2s;
+    transition-delay: 0s,2s;
 }
-
 .weather-box:not(.active) #clone-info-weather .weather{
     opacity: 0;
     transition-delay: 0s;
 }
+
 
 .active-clone#clone-info-weather .weather{
     transform:translateY(0%)
