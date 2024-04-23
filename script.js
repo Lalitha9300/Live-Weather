@@ -33,6 +33,7 @@ search.addEventListener('click',()=>{
         const humidity = document.querySelector('.weather-details .humidity span');
         const wind = document.querySelector('.weather-details .wind span');
 
+        const bodys = document.querySelector('body');
         if(cityHide.textContent == city){
             return;
         }
@@ -54,12 +55,14 @@ search.addEventListener('click',()=>{
                     break;
                 case 'Rain':
                     image.src = "assets/rain.png";
+                    
                     break;
                 case 'Snow':
                     image.src = "assets/snow.png";
                     break;
                 case 'Clouds':
                     image.src = "assets/cloud.png";
+                    // bodys.style.background.innerHTML='<video src="./assets/clouds.mp4" autoplay></video>'
                     break; 
                 case 'Mist':
                     image.src = "assets/mist.png";
