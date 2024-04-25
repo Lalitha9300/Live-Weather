@@ -14,8 +14,10 @@ body{
     background-position: center;
     overflow: hidden;
 }
-/* .home{
+.home{
     height: 100vh;
+    display: flex;
+    align-items: center;
 }
 .back{
     position: absolute;
@@ -26,11 +28,12 @@ body{
     height: auto;
     width: auto;
     z-index: -1;
-} */
+    
+}
 .container{
     height: 100px;
     width: 400px;
-    background: linear-gradient(rgba(54, 177, 235, 0.274), rgb(7, 63, 184));
+    background: linear-gradient(rgba(54, 235, 123, 0.274), rgba(13, 184, 7, 0.397));
     border: 2px solid rgb(14, 13, 13,.3);
     position: relative;
     padding: 20px;
@@ -107,6 +110,7 @@ body{
     transition: transform 1s ease;
     transition-delay: .6s;
 }
+
 .weather-box .box .info-weather{
     transform: translateY(-120%);
 }

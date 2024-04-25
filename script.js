@@ -27,13 +27,14 @@ search.addEventListener('click',()=>{
         return;
         }
 
+        const video = document.querySelector('.home video');
         const image = document.querySelector('.weather-box img');
         const temperature = document.querySelector('.weather-box .temperature');
         const description = document.querySelector('.weather-box .description');
         const humidity = document.querySelector('.weather-details .humidity span');
         const wind = document.querySelector('.weather-details .wind span');
 
-        const bodys = document.querySelector('body');
+        // const bodys = document.querySelector('body');
         if(cityHide.textContent == city){
             return;
         }
@@ -52,26 +53,31 @@ search.addEventListener('click',()=>{
             switch (json.weather[0].main) {
                 case 'Clear':
                     image.src = "assets/clear.png";
+                    video.src = "assets/clears.mp4"
                     break;
                 case 'Rain':
                     image.src = "assets/rain.png";
-                    
+                    video.src = "assets/rains.mp4"
                     break;
                 case 'Snow':
                     image.src = "assets/snow.png";
+                    video.src = "assets/snows.mp4"
                     break;
                 case 'Clouds':
                     image.src = "assets/cloud.png";
-                    // bodys.style.background.innerHTML='<video src="./assets/clouds.mp4" autoplay></video>'
+                    video.src = "assets/clouds.mp4"
                     break; 
                 case 'Mist':
                     image.src = "assets/mist.png";
+                    video.src = "assets/moists.mp4"
                     break;
                 case 'Haze':
                     image.src = "assets/mist.png";
+                    video.src = "assets/moists.mp4"
                     break;      
                 default:
                     image.src = 'assets/cloud.png';
+                    // video.src = '';
             }
             
             temperature.innerHTML=`${parseInt(json.main.temp)-273}<span>°C</span>`;
