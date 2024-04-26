@@ -86,7 +86,7 @@ body{
     cursor: pointer;
 }
 .search-box input::placeholder{
-    color: black;
+    color: rgb(255, 255, 255,0.5);
     text-transform: capitalize;
 }
 .weather-box{
