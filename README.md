@@ -3,6 +3,7 @@
 ## Overview
 
 This project is a simple web application that provides live weather updates for a specified city. Users can enter the city name, and the app fetches real-time weather data from the OpenWeatherMap API. The weather information includes temperature, humidity, and wind speed, and also the icon and the background video represent the current weather conditions.
+
 ## Technologies Used
 
 - **HTML5, CSS3, JavaScript:** The core technologies used for building the front-end of the application.
@@ -12,6 +13,7 @@ This project is a simple web application that provides live weather updates for 
 
 - **Dynamic Weather Icons:** The app displays dynamic weather icons based on the current weather conditions (Clear, Clouds, Rain, Drizzle, Mist).
 - **Dynamic Background Video:** The background randomly changes to the video based on the weather for an engaging visual experience.
+
 
 ## How to Use
 
