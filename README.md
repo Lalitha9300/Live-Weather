@@ -22,6 +22,6 @@ This project is a simple web application that provides live weather updates for 
 
 ## Deployment
 
-The app is deployed and accessible for live use. You can check it out [here]().
+The app is deployed and accessible for live use. You can check it out [here]( https://lalitha9300.github.io/Live-Weather/).
 
 Feel free to explore and enjoy the live weather updates!
