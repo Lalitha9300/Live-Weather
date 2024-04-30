@@ -26,3 +26,8 @@ This project is a simple web application that provides live weather updates for 
 The app is deployed and accessible for live use. You can check it out [here]( https://lalitha9300.github.io/Live-Weather/).
 
 Feel free to explore and enjoy the live weather updates!
+
+![ScreenshotClear](https://github.com/Lalitha9300/Live-Weather/assets/160124149/d05883b2-19f5-4527-a0b3-40307f8fabee)
+
+![ScreenshotHaze](https://github.com/Lalitha9300/Live-Weather/assets/160124149/66d3534e-431b-422c-a6b6-01e874b2f505)
+
