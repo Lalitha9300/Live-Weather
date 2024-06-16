@@ -27,7 +27,7 @@ The app is deployed and accessible for live use. You can check it out [here]( ht
 
 Feel free to explore and enjoy the live weather updates!
 
-![ScreenshotClear](https://github.com/Lalitha9300/Live-Weather/assets/160124149/d05883b2-19f5-4527-a0b3-40307f8fabee)
+![ScreenshotClear](https://github.com/Lalitha9300/Live-Weather/assets/160124149/a78132c5-1c9f-4734-9c94-f3529297ff77)
 
 ![ScreenshotHaze](https://github.com/Lalitha9300/Live-Weather/assets/160124149/66d3534e-431b-422c-a6b6-01e874b2f505)
 
