@@ -40,7 +40,8 @@ body{
     padding: 20px;
     border-radius: 10px;
     transition: height .6s ease;
-    box-shadow: 0px 0px 20px 1px white;
+    box-shadow: 0px 0px 10px rgb(153, 151, 151);
+    backdrop-filter: blur(10px);
 }
 .search-box{
     position: relative;
