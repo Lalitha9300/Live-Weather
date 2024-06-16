@@ -29,5 +29,5 @@ Feel free to explore and enjoy the live weather updates!
 
 ![ScreenshotClear](https://github.com/Lalitha9300/Live-Weather/assets/160124149/a78132c5-1c9f-4734-9c94-f3529297ff77)
 
-![ScreenshotHaze](https://github.com/Lalitha9300/Live-Weather/assets/160124149/66d3534e-431b-422c-a6b6-01e874b2f505)
+![ScreenshotHaze](https://github.com/Lalitha9300/Live-Weather/assets/160124149/d312031e-a98c-4e4d-840c-16883a074268)
 
