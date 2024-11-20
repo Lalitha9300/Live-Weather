@@ -18,6 +18,7 @@ body{
     height: 100vh;
     display: flex;
     align-items: center;
+    justify-content: center;
     color: white;
 }
 .back{
@@ -35,7 +36,7 @@ body{
     height: 100px;
     width: 400px;
     /* background: linear-gradient(rgba(54, 235, 123, 0.4), rgba(13, 184, 7,0.5)); */
-    border: 2px solid rgb(14, 13, 13,.3);
+    border: 2px solid rgba(35, 26, 26, 0.3);
     position: relative;
     padding: 20px;
     border-radius: 10px;
@@ -43,6 +44,7 @@ body{
     box-shadow: 0px 0px 10px rgb(153, 151, 151);
     backdrop-filter: blur(10px);
 }
+
 .search-box{
     position: relative;
     height: 55px;
@@ -93,6 +95,7 @@ body{
 .weather-box{
     text-align: center;
     margin: 40px 0;
+    /* background-color: red; */
 }
 .weather-box,
 .weather-details,
@@ -155,13 +158,16 @@ margin-left: 4px;
     width: 100%;
     padding: 0 20px;
     display: flex;
+    justify-content: space-evenly;
+    /* background-color: yellow; */
 }
 .weather-details .humidity,
 .weather-details .wind{
     display: flex;
     align-items: center;
-    width: 50%;
+    width: 48%;
     transform: translateY(-100%);
+    /* background-color: rgb(76, 0, 255); */
 }
 .weather-details.active .humidity,
 .weather-details.active .wind{
@@ -245,4 +251,34 @@ width: 70%;
 .active-clone#clone-info-humidity span,
 .active-clone#clone-info-wind span{
     transform: translateY(0%);
+}
+@media screen and (max-width:412px) {
+    .container{
+        width: 80%; }
+        .weather-box.active{
+            height: 50%;
+        }
+        .weather-box.active .temperature{
+            font-size: 30px;
+        }
+        .weather-details.active{
+            height: 25%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .weather-details.active .humidity,
+        .weather-details.active .wind{
+            height: 45%;
+            width: 66%;
+            font: 15px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            padding: 0;
+        }
+        .weather-details.active i{
+            font-size: 30px;
+        }
 }
